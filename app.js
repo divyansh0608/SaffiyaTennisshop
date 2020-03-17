@@ -13,7 +13,7 @@ const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
 const razorpayRoutes = require('./routes/razorpay');
 // const orderRoutes = require('./routes/order');
-
+const path = require('path');
 // app
 const app = express();
 
@@ -39,7 +39,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(expressValidator());
 app.use(cors());
-
+console.log(`DIRNAME: ${__dirname}`)
+app.use(express.static(path.join(__dirname, 'build')));
 // routes middleware
 app.use('/api', authRoutes);
 app.use('/api', userRoutes);
