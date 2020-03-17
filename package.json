@@ -1,0 +1,41 @@
+{
+  "name": "ecom1",
+  "version": "1.0.0",
+  "description": "miniproject",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "DIVYANSH SINGH PANWAR",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyansh0608/ecom1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/divyansh0608/ecom1/issues"
+  },
+  "homepage": "https://github.com/divyansh0608/ecom1#readme",
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.2",
+    "body-parser": "^1.19.0",
+    "braintree": "^2.22.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^5.3.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "instamojo-nodejs": "0.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "razorpay": "^2.0.6",
+    "uuid": "^3.3.3"
+  }
+}
