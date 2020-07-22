@@ -11,8 +11,10 @@ const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
-const razorpayRoutes = require('./routes/razorpay');
-// const orderRoutes = require('./routes/order');
+// const chat=require('./routes/chat');
+ const razorpayRoutes = require('./routes/razorpay');
+const orderRoutes = require('./routes/order');
+
 const path = require('path');
 // app
 const app = express();
@@ -46,8 +48,9 @@ app.use('/api', authRoutes);
 app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
  app.use('/api', productRoutes);
+//  app.use('/api',chat);
  app.use('/api', razorpayRoutes);
-// app.use('/api', orderRoutes);
+app.use('/api', orderRoutes);
 
 const port = process.env.PORT || 8000;
 

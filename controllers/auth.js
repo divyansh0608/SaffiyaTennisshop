@@ -92,6 +92,10 @@ exports.requireSignin = expressJwt({
     secret: process.env.JWT_SECRET,
     userProperty: 'auth'
 });
+// exports.forgotPassword = (req,res) => {
+//     res(true)
+//     // return true;
+// }
 //for authenticated  user
 exports.isAuth = (req, res, next) => {
     let user = req.profile && req.auth && req.profile._id == req.auth._id;//if this is true else show error

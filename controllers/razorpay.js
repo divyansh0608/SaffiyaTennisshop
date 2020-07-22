@@ -13,18 +13,18 @@ require('dotenv').config()
 
 
 
-exports.generateToken = (req, res) => {   
-    gateway.clientToken.generate({},function(err,response){
-        if(err){
-            res.status(500),send(err)
-        }
-        else{
-            res.send(response)
-        }
-    })
+// exports.generateToken = (req, res) => {   
+//     gateway.clientToken.generate({},function(err,response){
+//         if(err){
+//             res.status(500),send(err)
+//         }
+//         else{
+//             res.send(response)
+//         }
+//     })
+  
     
-    
-}
+// }
 
 // exports.generateToken = (req,res) =>{
 //  gateway.clientToken.generate({}, function(err,response){
