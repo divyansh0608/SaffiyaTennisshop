@@ -123,8 +123,8 @@ exports.update = (req, res) => {
 
 /**
  * sell / arrival
- * by sell = /products?sortBy=sold&order=desc&limit=4
- * by arrival = /products?sortBy=createdAt&order=desc&limit=4
+  by sell = /products?sortBy=sold&order=desc&limit=4
+  by arrival = /products?sortBy=createdAt&order=desc&limit=4
  * if no params are sent, then all products are returned
  */
 
@@ -156,7 +156,7 @@ exports.list = (req, res) => {
 exports.listRelated = (req, res) => {
     let limit = req.query.limit ? parseInt(req.query.limit) : 6;
 
-    Product.find({ _id: { $ne: req.product }, category: req.product.category })
+    Product.find({ _id: { $ne: req.product }, category: req.product.category })  //KEY find product based on id that matches category corresponding to id, not including this (requested) product
         .limit(limit)
         .populate('category', '_id name')
         .exec((err, products) => {
@@ -201,7 +201,7 @@ exports.listBySearch = (req, res) => {
     for (let key in req.body.filters) {
         if (req.body.filters[key].length > 0) {
             if (key === 'price') {
-                // gte -  greater than price [0-10]
+                // gte -  greater than price [0-10] NOTE THESE ARE ALL THE KEYS
                 // lte - less than
                 findArgs[key] = {
                     $gte: req.body.filters[key][0],

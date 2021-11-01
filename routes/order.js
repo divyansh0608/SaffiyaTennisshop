@@ -14,8 +14,8 @@ const {
 
 router.post(
     "/order/create/:userId",
-    requireSignin,
-    isAuth,
+    // requireSignin,
+    // isAuth,
     // addOrderToUserHistory,
     // decreaseQuantity,
     create

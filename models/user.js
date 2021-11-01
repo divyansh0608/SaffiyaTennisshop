@@ -68,3 +68,9 @@ userSchema.methods = {
 };
 
 module.exports = mongoose.model('User', userSchema);
+// // {
+//     "name": "Divyansh panwar singh",
+//     "email": "divyansh008@yahoo.com",
+//     "password": "@8juneking",
+//     "role": 1
+// }

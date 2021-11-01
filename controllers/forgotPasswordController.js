@@ -1,6 +1,6 @@
 
 // exports.forgotPassword = () => {
-//     return false;
+//     return true;
 // };
 
 exports.doSomethingBefore = () => {

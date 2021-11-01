@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "test-dev": "jest --watch",
-    "test-deva":"jest --collectCoverage",
+    "test-deva": "jest --collectCoverage",
     "test-devs": "jest --update-snapshot --detectOpenHandles"
   },
   "keywords": [],
@@ -37,6 +37,7 @@
     "lodash": "^4.17.15",
     "mongoose": "^5.8.1",
     "morgan": "^1.9.1",
+    "node-sloc": "^0.1.12",
     "nodemon": "^2.0.2",
     "razorpay": "^2.0.6",
     "socket.io": "^2.3.0",
